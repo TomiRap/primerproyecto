@@ -21,13 +21,8 @@ MULTIPLICACION: '*';
 DIVISION : '/';
 MODULO : '%';
 
-// Variables
-INT : 'int' ;
-DOUBLE: 'double';
-BOOL: 'boolean';
 
 
-NUMERO : DIGITO+ ;
 ID : (LETRA | '_')(LETRA | DIGITO | '_')* ;
 
 programa : instrucciones EOF ;
@@ -56,11 +51,9 @@ expresiones : exp PYC expresiones
             | EOF
  ;
 
-exp : e ;
+exp : term t;
 
-e : term t ;
-
-term : factor t ;
+term : factor t;
 
 t : SUMA term
   | RESTA term

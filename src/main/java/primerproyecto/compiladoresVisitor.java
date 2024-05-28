@@ -61,12 +61,6 @@ public interface compiladoresVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitExp(compiladoresParser.ExpContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link compiladoresParser#e}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitE(compiladoresParser.EContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link compiladoresParser#term}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

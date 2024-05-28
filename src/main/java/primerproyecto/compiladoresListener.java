@@ -90,16 +90,6 @@ public interface compiladoresListener extends ParseTreeListener {
 	 */
 	void exitExp(compiladoresParser.ExpContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link compiladoresParser#e}.
-	 * @param ctx the parse tree
-	 */
-	void enterE(compiladoresParser.EContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link compiladoresParser#e}.
-	 * @param ctx the parse tree
-	 */
-	void exitE(compiladoresParser.EContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link compiladoresParser#term}.
 	 * @param ctx the parse tree
 	 */
