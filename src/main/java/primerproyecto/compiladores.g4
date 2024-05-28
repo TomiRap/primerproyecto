@@ -21,6 +21,13 @@ MULTIPLICACION: '*';
 DIVISION : '/';
 MODULO : '%';
 
+// Variables
+INT : 'int' ;
+DOUBLE: 'double';
+BOOL: 'boolean';
+
+IRETURN: 'return';
+NUMERO : DIGITO+ ;
 
 
 ID : (LETRA | '_')(LETRA | DIGITO | '_')* ;
